@@ -15,6 +15,14 @@ Requirements:
   - awk, perl and sed
   - outside of tmux, `$TERM` must be set to `xterm-256color`
 
+Installation updated by togo:
+```
+git clone http://this/repo.git /path/to/repo
+cd /path/to/repo
+bash install.sh
+```
+
+
 To install, run the following from your terminal: (you may want to backup your
 existing `~/.tmux.conf` first)
 
@@ -34,6 +42,7 @@ $ git clone https://github.com/gpakosz/.tmux.git /path/to/oh-my-tmux
 $ ln -s -f /path/to/oh-my-tmux/.tmux.conf ~/.tmux.conf
 $ cp /path/to/oh-my-tmux/.tmux.conf.local ~/.tmux.conf.local
 ```
+
 
 Then proceed to [customize] your `~/.tmux.conf.local` copy.
 
@@ -150,7 +159,8 @@ list of key bindings:
   - `<prefix> C-c` means you have to hit <kbd>Ctrl</kbd> + <kbd>a</kbd> or <kbd>Ctrl</kbd> + <kbd>b</kbd> followed by <kbd>Ctrl</kbd> + <kbd>c</kbd>
 
 This configuration uses the following bindings:
-
+ - `<prefix> C-a` open last window 
+ - `<prefix> C-s` toggle synchronize-panes
  - `<prefix> e` opens `~/.tmux.conf.local` with the editor defined by the
    `$EDITOR` environment variable (defaults to `vim` when empty)
  - `<prefix> r` reloads the configuration
